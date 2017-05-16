@@ -561,7 +561,7 @@ private class RACellFakeView: UIView {
                 self.cellFakeHightedView!.alpha = 0;
                 let shadowAnimation = CABasicAnimation(keyPath: "shadowOpacity")
                 shadowAnimation.fromValue = 0
-                shadowAnimation.toValue = 0.7
+                shadowAnimation.toValue = 0.3
                 shadowAnimation.isRemovedOnCompletion = false
                 shadowAnimation.fillMode = kCAFillModeForwards
                 self.layer.add(shadowAnimation, forKey: "applyShadow")
@@ -581,7 +581,7 @@ private class RACellFakeView: UIView {
                 self.transform = CGAffineTransform.identity
                 self.frame = self.cellFrame!
                 let shadowAnimation = CABasicAnimation(keyPath: "shadowOpacity")
-                shadowAnimation.fromValue = 0.7
+                shadowAnimation.fromValue = 0.3
                 shadowAnimation.toValue = 0
                 shadowAnimation.isRemovedOnCompletion = false
                 shadowAnimation.fillMode = kCAFillModeForwards
