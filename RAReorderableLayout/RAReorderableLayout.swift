@@ -516,7 +516,7 @@ private class RACellFakeView: UIView {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0)
         layer.shadowOpacity = 0
-        layer.shadowRadius = 5.0
+        layer.shadowRadius = 2.5
         layer.shouldRasterize = false
         
         cellFakeImageView = UIImageView(frame: self.bounds)
@@ -561,7 +561,7 @@ private class RACellFakeView: UIView {
                 self.cellFakeHightedView!.alpha = 0;
                 let shadowAnimation = CABasicAnimation(keyPath: "shadowOpacity")
                 shadowAnimation.fromValue = 0
-                shadowAnimation.toValue = 0.3
+                shadowAnimation.toValue = 0.15
                 shadowAnimation.isRemovedOnCompletion = false
                 shadowAnimation.fillMode = kCAFillModeForwards
                 self.layer.add(shadowAnimation, forKey: "applyShadow")
@@ -581,7 +581,7 @@ private class RACellFakeView: UIView {
                 self.transform = CGAffineTransform.identity
                 self.frame = self.cellFrame!
                 let shadowAnimation = CABasicAnimation(keyPath: "shadowOpacity")
-                shadowAnimation.fromValue = 0.3
+                shadowAnimation.fromValue = 0.15
                 shadowAnimation.toValue = 0
                 shadowAnimation.isRemovedOnCompletion = false
                 shadowAnimation.fillMode = kCAFillModeForwards
